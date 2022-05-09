@@ -54,7 +54,8 @@ SELECT COUNT(DISTINCT hometeam) FROM matches WHERE division_code = 'F1' OR divis
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT * FROM matches WHERE (hometeam = 'Huddersfield' AND awayteam = 'Swansea');
+SELECT * FROM matches WHERE (hometeam = 'Swansea' AND awayteam = 'Huddersfield');
 
 ```
 
