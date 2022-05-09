@@ -21,7 +21,7 @@ SELECT * FROM public.matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelo
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT name FROM divisions where country = 'Scotland';
 
 ```
 
@@ -38,7 +38,7 @@ SELECT COUNT(id) FROM matches WHERE division_code = 'D1' AND (hometeam ='Freibur
 
 ```sql
 <!-- Copy solution here -->
- 
+ SELECT DISTINCT hometeam, awayteam FROM matches WHERE hometeam LIKE '%City';
 
 ```
 
