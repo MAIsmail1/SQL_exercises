@@ -14,7 +14,7 @@ SELECT * FROM public.matches WHERE season = 2017;
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT * FROM public.matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelona';
 ```
 
 3) What are the names of the Scottish divisions included?
@@ -29,7 +29,8 @@ SELECT * FROM public.matches WHERE season = 2017;
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT code FROM divisions WHERE name = 'Bundesliga';
+SELECT COUNT(id) FROM matches WHERE division_code = 'D1' AND (hometeam ='Freiburg' OR awayteam = 'Freiburg');
 
 ```
 
@@ -37,7 +38,7 @@ SELECT * FROM public.matches WHERE season = 2017;
 
 ```sql
 <!-- Copy solution here -->
-
+ 
 
 ```
 
