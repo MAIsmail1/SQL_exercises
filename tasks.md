@@ -63,7 +63,7 @@ SELECT * FROM matches WHERE (hometeam = 'Swansea' AND awayteam = 'Huddersfield')
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT COUNT(ftr) FROM matches WHERE (ftr = 'D') AND (season >= 2010 AND season <= 2015) AND division_code = 'N1';
 
 ```
 
@@ -71,7 +71,7 @@ SELECT * FROM matches WHERE (hometeam = 'Swansea' AND awayteam = 'Huddersfield')
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT * FROM public.matches WHERE division_code = 'E0' ORDER BY (ftag + fthg) DESC, fthg DESC;
 
 ```
 
@@ -79,7 +79,7 @@ SELECT * FROM matches WHERE (hometeam = 'Swansea' AND awayteam = 'Huddersfield')
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT SUM(ftag + fthg), season, division_code FROM public.matches GROUP BY division_code, season ORDER BY SUM DESC LIMIT 1;
 
 ```
 
